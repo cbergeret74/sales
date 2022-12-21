@@ -4,18 +4,22 @@
 	<title>Drill to your Source Application!</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+   <script>
+		function getParameter(parameterName){
+			let parameters = new URLSearchParams(window.location.search);
+			return parameters.get(parameterName);
+			}
+	</script>
   </head>
   <body>
 		<object data="logo-salesforce.svg" width="80" height="80"> </object>
 		<p></p>
 		<p></p>
-		<h4>Opportunity6: </h4>
-<script>
-const srch = "location.search"; // location.search; 
-const parms = new URLSearchParams(srch);
-document.getElementById("footer").innerHTML += `Name: <span id="Opportunity">${parms.get("Opportunity")}</span>;
-</script> 
+		<h4>Opportunity7: </h4>
+		<script>
+		getParameter('Opportunity');
+                console.info(Opportunity);		
+		</script> 
 		<p></p>
 		<p>This Accelerator is configured to allow you to drill back to your Source Application (Salesforce Sales Cloud or other) and deep-dive to each opportunity.</p>
 		<p></p>
