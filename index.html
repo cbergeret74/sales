@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<title>Drill to your Source Application!</title>
+    <title>Drill to your Source Application!</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   <script>
+    <script>
 		function getParameter(parameterName){
 			let parameters = new URLSearchParams(window.location.search);
 			return parameters.get(parameterName);
 			}
-	</script>
+  </script>
   </head>
   <body>
 		<object data="logo-salesforce.svg" width="80" height="80"> </object>
 		<p></p>
 		<p></p>
-		<h4>Opportunity9: 
+		<h4>Opportunity: 
 		<script>
 		var param=getParameter('Opportunity');	
 		document.write(param);              	
 		</script> 			
 	  	</h4>
-
 		<p></p>
 		<p>This Accelerator is configured to allow you to drill back to your Source Application (Salesforce Sales Cloud or other) and deep-dive to each opportunity.</p>
 		<p></p>
